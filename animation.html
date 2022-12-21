@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+            <!-- ==========hover========= -->
+    <link rel="stylesheet" href="./assets/Hover-master/css/hover.css">
+
+           <!-- ============animation cdn==== -->
+           <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         />  
+         
+         <!-- =========bootstrap========= -->
+         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
+   
+</head>
+<body>
+
+    <!-- <h1 class=" animate__animated animate__backInRight text-center">An animated element</h1> -->
+   
+    <!-- animate__animated  -->
+
+    <div class="row justify-content-center">
+        <div class="col-md-4 animate__animated animate__backInRight "  >
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/laptop2.jpg" alt="" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info ">Lenovo IdeaPad</h4>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="container">
+
+    <button class="btn btn-primary" data-bs-target="#myModal" data-bs-toggle="modal"> Login</button>
+
+    <!-- ===== modal and pill code -->
+
+    <div class="modal" id="myModal" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header" style="background-color: rgb(15, 47, 83)">
+              <h4 class="modal-title">
+           <ul class="nav nav-pills" style="list-style-type: none;">
+            <li class="nav-item active"><a class="nav-link " data-bs-toggle="pill" href="#login">login</a></li>
+            <li class="nav-item"><a  class="nav-link" data-bs-toggle="pill"href="#signup">signup</a></li>
+            </ul>
+            </h4>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body justify-content-between">
+              
+                <div class="tab-content" id="mytabcontent">
+                    <div id="login" class="tab-pane   active">
+                        <div class="myform ">
+                            <form>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+    
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="checkbox my-3">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                                <button type="button" class="btn  btn-primary mt-3">Submit</button>
+                            </form>
+                           
+                    </div>
+                    </div>
+
+                    <div id="signup" class="tab-pane">
+
+                        <div class="my form ">
+                            <form>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+    
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Contact</label>
+                                    <input type="number" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="chosefile">ChoseFile</label>
+                                    <input type="file" class="form-control" id="chosefile">
+                                </div>
+    
+                                <div class="checkbox my-3">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                                <button type="button" class="btn  btn-primary mt-3">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+      
+            
+            <!-- modal footer -->
+            <div class="modal-footer" style="background-color:  rgb(199, 199, 199);">
+                <button type="button" class="btn btn-outline-success" data-bs-target="#mylogin"
+                    data-bs-toggle="modal">Login</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== modal and pill code end====== -->
+</div>
+
+
+ 
+
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

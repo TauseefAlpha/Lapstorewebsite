@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ============favicon img================= -->
+
+    <link rel="icon" href="./assets/imgs/favicon.png" type="image/png">
+
+    <!-- online bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- downloaded bootstrap .css file -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
+    <!-- fontosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <!-- =================animated css========== -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- ======================hover css============= -->
+  <link rel="stylesheet" href="./assets/Hover-master/css/hover.css">
+
+  <!-- ============================================ -->
+
+    <!-- ================================= -->
+
+    <link rel="stylesheet" href="./assets/css/style1.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-2  mb-3" style="background-color: #e4e4e4e7;">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3 text-center"> Phone: 0314-5976605</div>
+                <div class="col-md-3 text-center"" >Email: ahmedtausef98@gamil.com</div>
+            </div>
+        </div>
+    </div>
+
+   <div class="container-fluid">
+    <h2 class=" animate__animated animate__backInRight text-center" class="" style="text-shadow: 2px 2px 8px rgb(95, 95, 109); font-family: 'Sofia', sans-serif;  ">TA
+        Laptop Store</h2>
+
+    <!-- justify-content-end -- in nav tag--->
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info sticky-top">
+        <div class="container-fluid p-0 ">
+            <a href="" class="navbar-brand"><img id="logo" src="./logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-target="#navshow" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navshow">
+                <ul class="navbar-nav " id="topnav">
+                    <li class="nav-item"><a class="nav-link active" href="#Home"><i class="fa-solid fa-house"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#featureproduct"><i
+                                class="fa-solid fa-person p-1"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#About"><i class="fa-solid fa-person p-1"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="#gallary"><i
+                                class="fa-brands fa-blogger-b p-1"></i>Blog</a>
+
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-comment"></i> contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#contact">577868</a></li>
+                            <li><a class="dropdown-item" href="#">363763</a></li>
+                            <li><a class="dropdown-item" href="#">63467376</a></li>
+                        </ul>
+                    </li>
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!-- <button class="btn btn-primary me-2">login</button> -->
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            <a class="nav-link mx-2" data-bs-toggle="modal" style="color: rgb(226, 217, 217);" href="#myModal"
+                id="log"><i class="fa-solid fa-user pe-1"></i>login</a>
+
+        </div>
+    </nav>
+</div>
+
+     <!-- ===== modal and pill code -->
+
+     <div class="modal" id="myModal" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header" style="background-color: rgb(15, 47, 83)">
+              <h4 class="modal-title">
+           <ul class="nav nav-pills" style="list-style-type: none;">
+            <li class="nav-item active text-white" ><a class="nav-link"
+                 data-bs-toggle="pill" href="#login">login</a></li>
+            <li class="nav-item text-white"><a  class="nav-link" data-bs-toggle="pill"href="#signup">signup</a></li>
+            </ul>
+            </h4>
+              
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body justify-content-between">
+              
+                <div class="tab-content" id="mytabcontent">
+                    <div id="login" class="tab-pane   active">
+                        <div class="myform ">
+                            <form>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+    
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="checkbox my-3">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                                <button type="button" class="btn  btn-primary mt-3">Submit</button>
+                            </form>
+                           
+                    </div>
+                    </div>
+
+                    <div id="signup" class="tab-pane">
+
+                        <div class="my form ">
+                            <form>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+    
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="pwd">Contact</label>
+                                    <input type="number" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group my-3">
+                                    <label class="control-label col-sm-2" for="chosefile">ChoseFile</label>
+                                    <input type="file" class="form-control" id="chosefile">
+                                </div>
+    
+                                <div class="checkbox my-3">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                                <button type="button" class="btn  btn-primary mt-3">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+      
+            
+            <!-- modal footer -->
+            <div class="modal-footer" style="background-color:  rgb(199, 199, 199);">
+                <button type="button" class="btn btn-outline-success" data-bs-target="#mylogin"
+                    data-bs-toggle="modal">Login</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== modal and pill code end====== -->
+
+
+
+    <!-- ====================carousel slide start========================= -->
+    <div class="container-fluid">
+    <div class="row" id="Home" class="tab-pane fade">
+        <div class="col-md-12">
+            <div id="slidecontrol" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicator -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slidecontrol" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#slidecontrol" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slidecontrol" data-bs-slide-to="2"></button>
+
+                </div>
+                <!----------- -->
+                <div class="carousel-inner ">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./assets/imgs/picslide1.jpg" class="d-block w-100" style="height:73vh ;" alt="">
+                        <div class="carousel-caption">
+                            <h3 style="color: rgb(174, 165, 182);">Hp core i5</h3>
+                            <p style="color: rgb(56, 56, 70);font-weight: bold;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/imgs/picslide2.jpg" class="d-block w-100" style="height:73vh ;" alt="">
+                        <div class="carousel-caption">
+                            <h3 style="color: rgb(228, 224, 231);">Hp Core i7</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/imgs/picslide3.jpg" class="d-block w-100" style="height:73vh;" alt="">
+                        <div class="carousel-caption">
+                            <h3 style="color: rgb(230, 227, 233);">Apple MacBook Pro</h3>
+                            <p style="color: rgb(37, 37, 54); font-weight: bold">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Reiciendis!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- icon -->
+                <a href="" class=" carousel-control-prev" data-bs-target="#slidecontrol" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="" class=" carousel-control-next" data-bs-target="#slidecontrol" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ====================carousel slide end========================= -->
+
+    
+    <!--=================== About tags ==================-->
+
+    <div class="container-fluid">
+    <div class="row justify-content-center mt-5" id="About">
+        <div class="col-md-11">
+
+            <div class="card">
+                <div class="card-header bg-info">
+                    
+                        <h2 class="mb-2 text-center" style="  font-family: 'Trirong', serif;color:rgb(240, 235, 243);">About Us</h2>
+                    
+
+                </div>
+                <div class="card-body">
+                    <p style="  font-family: 'Trirong'" ;>
+                        Mr. Laptop (since 2007) offers total solutions. The service platform features a whole range of
+                        IT products,
+                        services & solutions, including IT consultancy, Mr. Laptop is also the authorized reseller of
+                        Intel, HP,
+                        Dell, and Lenovo. Mr. Laptop has number of years’ experience in providing IT Services & have a
+                        dedicated
+                        team of professionals committed to supporting & servicing the wide range of Intel based hardware
+                        like: PCs,
+                        All in One (AIO) PCs, Laptops, Laptops Convertibles, Tablets PCs, Customize hardware, Digital
+                        Signage
+                        Solutions, Extreme Gamming Solutions, associated hardware peripheral products & solutions
+                        offered. Mr.
+                        Laptop, we’re accelerating our clients’ business transformations and their journey into the on
+                        demand world.
+                        Our objectives are straightforward: create new ways to optimize clients’ business performance
+                        and unlock new
+                        levels of value for their organizations. To transform a business to become a more responsive,
+                        resilient,
+                        focused enterprise, we bring fresh thinking and deep business insight, in combination with the
+                        world’s most
+                        advanced technologies, all delivered by practitioners around the world. And more than that, we
+                        help our
+                        clients realize results at every step of a solution, from evaluation and strategy to business
+                        model design,
+                        process transformation and implementation, and every aspect of delivery over the course of
+                        multi-year
+                        engagements.
+                        Mr. Laptop (since 2007) offers total solutions. The service platform features a whole range of
+                        IT products,
+                        services & solutions, including IT consultancy, Mr. Laptop is also the authorized reseller of
+                        Intel, HP,
+                        Dell, and Lenovo. Mr. Laptop has number of years’ experience in providing IT Services & have a
+                        dedicated
+                        team of professionals committed to supporting & servicing the wide range of Intel based hardware
+                        like: PCs,
+                        All in One (AIO) PCs, Laptops, Laptops Convertibles, Tablets PCs, Customize hardware, Digital
+                        Signage
+                        Solutions, Extreme Gamming Solutions, associated hardware peripheral products & solutions
+                        offered. Mr.
+                        Laptop, we’re accelerating our clients’ business transformations and their journey into the on
+                        demand world.
+                        Our objectives are straightforward: create new ways to optimize clients’ business performance
+                        and unlock new
+                        levels of value for their organizations. To transform a business to become a more responsive,
+                        resilient,
+                        focused enterprise, we bring fresh thinking and deep business insight, in combination with the
+                        world’s most
+                        advanced technologies, all delivered by practitioners around the world. And more than that, we
+                        help our
+                        clients realize results at every step of a solution, from evaluation and strategy to business
+                        model design,
+                        process transformation and implementation, and every aspect of delivery over the course of
+                        multi-year
+                        engagements.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!--=================== About tags Ends ==================-->
+
+    <!-- ====================feature products start============================= -->
+
+    <div class="container-fluid">
+
+    <div class="row mt-2 justify-content-around" id="featureproduct">
+
+
+        <h2 class="mb-4 mt-5 text-center"
+            style="  font-family: 'Trirong', serif;color:rgb(23, 23, 97); text-shadow: 2px 2px 4px #491679; ;">Feature
+            Products
+        </h2>
+
+        <!-- card 1 -->
+        <div class="col-md-3 mb-1">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/laptop1.jpg" alt="" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+                    <a href="#" class="btn btn-primary ">Add to cart</a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- card2 -->
+        <div class="col-md-3 mb-1">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/laptop2.jpg" alt="" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info ">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- card3 -->
+        <div class="col-md-3 mb-1">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/laptop3.jpg" alt="" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd row for cards -->
+    <div class="row mt-5 justify-content-around">
+
+        <!-- card 4 -->
+        <div class="col-md-3">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/pic8.jpg" alt="" style="height:242px;" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- card 5 -->
+        <div class="col-md-3 mb-1">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/pic7.jpg" alt="" style="height:242px;" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- card 6 -->
+        <div class="col-md-3 mb-1">
+            <div class="card " id="cardd">
+                <div class="card-header">
+                    <img src="./assets/imgs/product/pic6.jpg" alt="" style="height:242px;" class="card-img-top h-5">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title text-info">Lenovo IdeaPad</h4>
+                    <p class="card -text p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id='price' class="card-text text-shadow"> <b>Price :</b><span class="text-success">$100</span>
+                        <i class="fa-sharp fa-solid fa-cart-shopping mx-2"></i>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- =================feature product End============ -->
+
+
+    <!--=================== setting cloud list icon start ====-->
+
+    <div class="container-fluid">
+
+    <div class="row mt-4 justify-content-around">
+
+        <div class="col-md-3">
+
+            <!-- icon-set-removebg-preview.png -->
+            <img src="./assets/imgs/icon paragraph/setting-removebg-preview.png"
+                style="width:80%;  height:220px; padding: 10px;" alt="">
+
+            <h3 class="text-center">Setting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dicta alias, minima expedita rerum
+                labore officia! Quae aliquid incidunt dolorem!
+            </p>
+
+
+        </div>
+
+        <div class="col-md-3 ">
+
+
+            <!-- icon-set-removebg-preview.png -->
+            <img src="./assets/imgs/icon paragraph/cloud_img-removebg-preview.png" style="width:100%;  height:220px;"
+                alt="">
+
+            <h3 class="text-center"> Cloud Store </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dicta alias, minima expedita rerum
+                labore officia! Quae aliquid incidunt dolorem!
+            </p>
+
+        </div>
+        <div class="col-md-3">
+
+
+            <!-- icon-set-removebg-preview.png -->
+            <img src="./assets/imgs/icon paragraph/bar_icon-removebg1-preview.png" style="width:80%;  height:220px;"
+                alt="">
+
+            <h3 class="text-center">ListView</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dicta alias, minima expedita rerum
+                labore officia! Quae aliquid incidunt dolorem!
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+    <!--=================== setting cloud list icon start Ends ====-->
+
+
+    <!-- =====================Habitat-start==================-->
+    <div class="container-fluid">
+
+    <div class="row justify-content-around px-1"
+        style="border-top:4px solid rgb(40, 66, 95); border-bottom:4px solid rgb(40, 66, 95);" id="gallary">
+
+        <div class="col-md-5  my-4">
+            <h4 class="text-start" style="font-size: 30px;">Welcome To Habitat</h4>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut assumenda aspernatur
+                error quam sed
+                dignissimos repudiandae sit in libero vel tenetur, nulla veritatis voluptatibus fugiat quaerat.
+                Nihil
+                sint repudiandae neque eveniet, ratione labore vel. Amet sunt totam architecto ipsum, recusandae
+                officia, harum distinctio nihil sequi, soluta expedita voluptatibus veritatis ea.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente veniam eveniet at ex, harum esse
+                dolores id corporis ipsam! Eligendi quae aperiam cum dolor eaque nisi doloremque, reprehenderit,
+                accusantium, architecto earum officia distinctio perferendis aliquid sequi animi voluptatibus
+                possimus
+                quam! Voluptas distinctio ut excepturi assumenda vitae quod tenetur accusantium temporibus?</p>
+        </div>
+        <div class="col-md-5 px-4 my-3">
+            <h5> key feature</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt culpa
+                ipsam ipsum explicabo
+                earum laudantium in mollitia iusto pariatur, maxime rem laborum perspiciatis?</p>
+
+            <ul style="line-height:100%; list-style-type: none;  padding-left: 0px ;" class="text-white">
+                <li class=" nav-item "> <a class="nav-link text-secondary" href=""> <i
+                            class="fa-solid fa-check pe-2 text-success fa-2x"></i></i>ODER WOULD
+                        LIKE TO DO IT</a> </li>
+                <li class=" nav-item "> <a class="nav-link text-secondary" href=""> <i
+                            class="fa-solid fa-check pe-2 text-success fa-2x"></i>SIGNAL</a>
+                </li>
+
+
+                <li class=" nav-item "> <a class="nav-link text-secondary" href=""> <i
+                            class="fa-solid fa-check pe-2 text-success fa-2x"></i></i>ODER WOULD
+                        LIKE TO DO IT</a> </li>
+
+                <li class=" nav-item "> <a class="nav-link text-secondary" href=""> <i
+                            class="fa-solid fa-check pe-2 text-success fa-2x"></i></i>ODER WOULD
+                        LIKE TO DO IT</a> </li>
+
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+    <!-- ====================habitat-end=========================================== -->
+
+    <!--================ gallary start=============================== -->
+    <div class="container">
+
+        <div class="row mt-5 mb-5  justify-content-around ">
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img5.jpg"
+                    style="width: 100%; height: 360px; border-radius: 10%; border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img3.jpg"
+                    style="width: 100%; height: 360px;border-radius: 10%;  border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img6.jpg"
+                    style="width: 100%; height: 360px;border-radius: 10%; border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img3.jpg"
+                    style="width: 100%; height: 360px;border-radius: 10%; border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img5.jpg"
+                    style="width: 100%; height: 360px;border-radius: 10%; border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+            <div class="col-md-5 col-lg-4 pe-1 mb-2"><img src="./assets/imgs/gallary/img3.jpg"
+                    style="width: 100%; height: 360px;border-radius: 10%; border: 2px solid rgb(20, 10, 58);" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------=================images 6 cols==============-------------->
+
+
+
+    <!-- ==========================bottom footer start================= -->
+    <footer id="contact">
+
+        <div class="container-fluid " style="background-color:rgb(43, 40, 40) ;" id="contact">
+            <div class="container">
+                <div class="row mx-4 py-3 justify-content-around"
+                    style="border-top:6px solid rgb(28, 51, 126);; border-bottom: 5px solid rgb(28, 51, 126);; background-color: rgb(59, 56, 56); box-shadow: 5px 10px 18px #2f2f35;">
+
+                    <!-- ============================== -->
+                    <div class="col-md-3 ">
+                        <h4 class="text-white text-center">Disclaimer</h4>
+
+                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                            laboriosam
+                            aliquid perferendis
+                            officiis voluptates nisi qui corporis, minima dolorem. Est quae perspiciatis repudiandae? In
+                            aspernatur dolor sapiente voluptatem deleniti quisquam.</p>
+                        <p class="text-secondary"> link is provided if you want to wish to buy from coyright owner <span
+                                class="text-success">ahmedtause98@gmail.com</span> laptop
+                            images are provide4d
+
+                        </p>
+
+                    </div>
+
+                    <!-- ============================== -->
+                    <div class="col-md-3">
+                        <h4 class="text-white text-center">Contact Details</h4>
+
+                        <ul style=" list-style-type: none;">
+                            <li class=" text-white nav-item "><a class="nav-link text-secondary" href=""><i
+                                        class="fa-solid fa-house px-2 "></i> TelePHone :03145976605</a></li>
+                            <li class="text-white nav-item"><a class="nav-link text-secondary" href=""> <i
+                                        class="fa-solid fa-envelope px-2 "></i>Email : <span
+                                        style="color: rgb(28, 62, 173);">
+                                        abc@gmail.com</span></a></li>
+                            <li class=" text-white  nav-item"><a class="nav-link text-secondary" href=""><i
+                                        class="fa-solid fa-link px-2 "></i> Website: <span
+                                        style="color:  rgb(28, 62, 173);">
+                                        www.abc.com</span></a></li>
+                        </ul>
+                        <!-- <center>  <i  class="fa-solid fa-address-card text-secondary"></i></center>    -->
+                        <ul class="text-white" style=" list-style-type: none;">
+                            <li class="nav-item"> <a class="nav-link text-secondary" href=""> MureeRoad</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-secondary" href=""> Sadder</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-secondary" href="">Rawalpindi</a> </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- ==================== -->
+                    <div class="col-md-3">
+
+                        <h4 class="text-white text-center">Sample Menu</h4>
+                        <ul style="line-height:300%; list-style-type: none;" class="text-white">
+                            <li class=" nav-item text-white" style="border-bottom: 2px solid gray;"> <a
+                                    class="nav-link text-secondary" href=""> <i class="fa-solid fa-bars px-2"></i>ODER
+                                    LIKE TO DO</a> </li>
+                            <li class=" nav-item text-white" style="border-bottom: 2px solid gray;"> <a
+                                    class="nav-link text-secondary" href=""> <i
+                                        class="fa-solid fa-clock px-2"></i>SIGNAL</a>
+                            </li>
+                            <li class=" nav-item text-white" style="border-bottom: 2px solid gray;"> <a
+                                    class="nav-link text-secondary" href=""><i class="fa-solid fa-mug-hot px-2"></i> TEA
+                                    BREAK</a> </li>
+                            <li class=" nav-item text-white" style="border-bottom: 2px solid gray;"> <a
+                                    class="nav-link text-secondary" href=""> <i class="fa-solid fa-link px-2"></i>TOtal
+                                    ODER</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row  justify-content-between" style='background-color:rgb(29, 26, 26) '>
+                <div class="col-md-4 p-2">
+                    <ul class="" style="list-style-type:none ;">
+                        <li style="display: inline-block;" class="nav-item "><a class="nav-link text-light" href="">
+                                sample link1</a></li>
+                        <li style="display: inline-block;" class="nav-item "><a class="nav-link text-light" href="">
+                                sample link2</a></li>
+                        <li style="display: inline-block;" class="nav-item "><a class="nav-link  text-light" href="">
+                                sample link3</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-2 p-2 text-light text-center">
+
+                    <i class="fas fa-copyright pe-2"></i>coptwrightInfo TA
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- style="margin-left: 700px;" -->
+
+
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
